@@ -1,0 +1,60 @@
+<div class="container">
+  <h1>All Items</h1>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card bg-red">
+        <div class="card-header">
+          Apple
+        </div>
+
+        <div class="card-body">
+          <p class="card-text">{{appleCount}}</p>
+          <button type="button" class="btn btn-primary  button" (click)="addCount('apple')">+</button>
+          <button type="button" class="btn btn-primary button" (click)="reduceCount('apple')">-</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 ">
+      <div class="card bg-orange">
+        <div class="card-header">
+          Orange
+        </div>
+
+        <div class="card-body">
+          <p class="card-text">{{orangeCount}}</p>
+          <button type="button" class="btn btn-primary button" (click)="addCount('orange')">+</button>
+          <button type="button" class="btn btn-primary  button" (click)="reduceCount('orange')">-</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card bg-green">
+        <div class="card-header">
+          Grapes
+        </div>
+
+        <div class="card-body">
+          <p class="card-text">{{grapeCount}}</p>
+          <button type="button" class="btn btn-primary btn-circle button" (click)="addCount('grape')">+</button>
+          <button type="button" class="btn btn-primary btn-circle button" (click)="reduceCount('grape')">-</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class= "row">
+    <div class="col-sm-4">
+        <div class="card">
+          <div class="card-header">
+            Basket Stack
+          </div>
+  
+          <div class="card-body">
+            <!-- <div class="colorstrip-red"></div> -->
+            <p class="card-text" *ngIf="basketAppleCount>0">Apple - {{basketAppleCount}}</p>
+            <p class="card-text" *ngIf="basketOrangeCount>0" >Orange - {{basketOrangeCount}}</p>
+            <p class="card-text"*ngIf="basketGrapeCount>0" >Grape - {{basketGrapeCount}}</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

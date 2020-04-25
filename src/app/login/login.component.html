@@ -1,0 +1,8 @@
+<div class="wrapper">
+    <form *ngIf="loginForm" [formGroup]="loginForm" class="form-signin">       
+      <h2 class="form-signin-heading">Please login</h2>
+      <input type="text" formControlName="username" class="form-control"  placeholder="Username" required autofocus="" />
+      <input type="password" formControlName="password" class="form-control"  placeholder="Password" required/>
+      <button class="btn btn-lg btn-primary btn-block" (click)="onLogin()" [disabled]="!loginForm.valid">Login</button>   
+    </form>
+  </div>

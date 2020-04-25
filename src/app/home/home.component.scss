@@ -1,0 +1,30 @@
+.button {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 10px;
+    border-radius: 40px;
+  }
+.bg-red{
+    background: #ff3333   ;
+}
+.bg-orange{
+    background:#ff8000;
+}
+.bg-green{
+    background:#66cc00;
+}
+
+.colorstrip-red{
+    height: 2px;
+    border-bottom:solid 2px #ff3333;
+}
+.colorstrip-orange{
+    height: 2px;
+    border-bottom:solid 2px #ff8000;
+}
+.colorstrip-green{
+    height: 2px;
+    border-bottom:solid 2px #66cc00;
+}
